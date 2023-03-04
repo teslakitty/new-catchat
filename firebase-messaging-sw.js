@@ -1,38 +1,17 @@
-﻿// Give the service worker access to Firebase Messaging.
-// Note that you can only use Firebase Messaging here, other Firebase libraries
-// are not available in the service worker.
-importScripts('https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js');
+﻿  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyBxhkOKc_tWaeeUSePIwitc2Tm-aqrLTww",
-    authDomain: "chat-app-7da13.firebaseapp.com",
-    databaseURL: "https://chat-app-7da13.firebaseio.com",
-    projectId: "chat-app-7da13",
-    messagingSenderId: "454878238535",
-    appId: "1:454878238535:web:6fb06475d86f38e4"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyASQEPMe2tBt8h4ohflMThKZ74Qj9LolM0",
+    authDomain: "this-te.firebaseapp.com",
+    projectId: "this-te",
+    storageBucket: "this-te.appspot.com",
+    messagingSenderId: "815151260683",
+    appId: "1:815151260683:web:432e743fde469bc53d530e"
+  };
 
-
-// Retrieve an instance of Firebase Messaging so that it can handle background
-// messages.
-const messaging = firebase.messaging();
-
-messaging.setBackgroundMessageHandler(function (payload) {
-    console.log('[firebase-messaging-sw.js] Received background message ', payload);
-    // Customize notification here
-    const notificationTitle = 'You have new message';
-    const notificationOptions = {
-        body: payload.data.message,
-        icon: payload.data.icon
-    };
-
-    return self.registration.showNotification(notificationTitle,
-        notificationOptions);
-});
-
-
-
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);

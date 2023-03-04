@@ -6,12 +6,13 @@ importScripts('https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js');
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyBxhkOKc_tWaeeUSePIwitc2Tm-aqrLTww",
-    authDomain: "chat-app-7da13.firebaseapp.com",
-    databaseURL: "https://chat-app-7da13.firebaseio.com",
-    projectId: "chat-app-7da13",
-    messagingSenderId: "454878238535",
-    appId: "1:454878238535:web:6fb06475d86f38e4"
+    apiKey: "AIzaSyDIdSpACQbc1-_JICLQ6gRjl_YrX25eiOA",
+  authDomain: "mini-diary-organization.firebaseapp.com",
+  databaseURL: "https://mini-diary-organization-default-rtdb.firebaseio.com",
+  projectId: "mini-diary-organization",
+  storageBucket: "mini-diary-organization.appspot.com",
+  messagingSenderId: "542075449644",
+  appId: "1:542075449644:web:26133a6448c78f79927c89",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

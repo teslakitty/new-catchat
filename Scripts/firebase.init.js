@@ -1,13 +1,12 @@
-﻿
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyASQEPMe2tBt8h4ohflMThKZ74Qj9LolM0",
-    authDomain: "this-te.firebaseapp.com",
-    projectId: "this-te",
-    storageBucket: "this-te.appspot.com",
-    messagingSenderId: "815151260683",
-    appId: "1:815151260683:web:432e743fde469bc53d530e"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+﻿// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDIdSpACQbc1-_JICLQ6gRjl_YrX25eiOA",
+  authDomain: "mini-diary-organization.firebaseapp.com",
+  databaseURL: "https://mini-diary-organization-default-rtdb.firebaseio.com",
+  projectId: "mini-diary-organization",
+  storageBucket: "mini-diary-organization.appspot.com",
+  messagingSenderId: "542075449644",
+  appId: "1:542075449644:web:26133a6448c78f79927c89",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);

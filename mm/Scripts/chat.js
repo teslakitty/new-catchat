@@ -1,6 +1,6 @@
-﻿var currentUserKey = '';
-var chatKey = '';
-var friend_id = '';
+﻿var currentUserKey = 'maw';
+var chatKey = 'maq';
+var friend_id = 'meow';
 
 document.addEventListener('keydown', function (key) {
     if (key.which === 13) {
